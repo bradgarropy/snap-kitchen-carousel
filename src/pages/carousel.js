@@ -1,9 +1,7 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import "../styles/styles.css"
 
-import "./styles.css"
-
-function App() {
+const Carousel = () => {
     const products = [
         {
             id: 1,
@@ -53,16 +51,17 @@ function App() {
                 </div>
                 {products.map(product => {
                     return (
-                        <div id={product.id}>
+                        <div id={product.id} key={product.id}>
                             <img
                                 src={product.photo}
+                                alt={product.name}
                                 className="product-image"
                             />
                             <p>
                                 {product.name} | {product.calories}
                             </p>
-                            {product.tags.map(tag => (
-                                <p>{tag}</p>
+                            {product.tags.map((tag, index) => (
+                                <p key={index}>{tag}</p>
                             ))}
                             <p>{product.price}</p>
                         </div>
@@ -73,5 +72,4 @@ function App() {
     )
 }
 
-const rootElement = document.getElementById("root")
-ReactDOM.render(<App />, rootElement)
+export default Carousel
