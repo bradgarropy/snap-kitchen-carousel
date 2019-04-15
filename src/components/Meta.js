@@ -9,7 +9,7 @@ const Meta = () => {
 
             <title>gatsby starter</title>
 
-            <meta name="description" content="🥂 the great gatsby starter"/>
+            <meta name="description" content="⏩ snap kitchen interview question - slider"/>
             <meta name="keywords" content="gatsby, react, scss, eslint"/>
 
             <meta name="twitter:card" content="summary_large_image"/>
@@ -18,7 +18,7 @@ const Meta = () => {
             <meta name="twitter:title" content="gatsby starter"/>
             <meta
                 name="twitter:description"
-                content="🥂 the great gatsby starter"
+                content="⏩ snap kitchen interview question - slider"
             />
             <meta
                 name="twitter:image"
@@ -33,7 +33,7 @@ const Meta = () => {
             <meta property="og:title" content="gatsby starter"/>
             <meta
                 property="og:description"
-                content="🥂 the great gatsby starter"
+                content="⏩ snap kitchen interview question - slider"
             />
             <meta
                 property="og:image"
