@@ -3,8 +3,8 @@ import styled from "styled-components"
 import BuiltBy from "./BuiltBy"
 
 const StyledFooter = styled.div`
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    justify-content: end;
     align-items: center;
     background: ${({theme}) => theme.colors.lightBlack};
     color: ${({theme}) => theme.colors.white};
@@ -18,7 +18,6 @@ const StyledFooter = styled.div`
 const Footer = () => {
     return (
         <StyledFooter>
-            <p>FOOTER</p>
             <BuiltBy/>
         </StyledFooter>
     )

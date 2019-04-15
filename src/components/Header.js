@@ -1,9 +1,13 @@
 import React from "react"
 import styled from "styled-components"
+import SnapKitchen from "./SnapKitchen"
 
 const StyledHeader = styled.div`
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    column-gap: 10px;
     background-image: linear-gradient(
         to right bottom,
         ${({theme}) => theme.colors.pink},
@@ -21,7 +25,10 @@ const StyledHeader = styled.div`
 const Header = () => {
     return (
         <StyledHeader>
-            <p>HEADER</p>
+            <a href="http://snapkitchen.com">
+                <SnapKitchen/>
+            </a>
+            <p>Slider</p>
         </StyledHeader>
     )
 }
