@@ -11,6 +11,7 @@ const StyledHeader = styled.div`
     );
     color: ${({theme}) => theme.colors.white};
     padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(86, 83, 83, 0.65);
 
     p {
         margin: 0;

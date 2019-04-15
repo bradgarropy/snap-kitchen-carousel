@@ -4,16 +4,18 @@ import styled from "styled-components"
 import {displayPrice} from "../../utils/price"
 
 const FoodCardWrapper = styled.div`
-    border: 3px solid black;
     color: ${({theme}) => theme.colors.charcoal};
     display: grid;
     justify-items: center;
     justify-content: center;
-    border: 3px solid hotpink;
+`
+
+const FoodPhoto = styled.img`
+    width: 100%;
 `
 
 const FoodDescription = styled.p`
-    margin-top: -25px;
+    margin: 0 0 5px 0;
 `
 
 const FoodName = styled.span`
@@ -27,6 +29,7 @@ const FoodCalories = styled.span`
 
 const FoodTags = styled.p`
     font-size: 14px;
+    margin: 0 0 15px 0;
 `
 
 const FoodPrice = styled.p`
@@ -34,6 +37,7 @@ const FoodPrice = styled.p`
     align-content: center;
     border-radius: 5px;
     padding: 7px;
+    margin: 0;
     width: 92px;
     height: 24px;
     text-align: center;
@@ -45,12 +49,12 @@ const FoodCard = ({food}) => {
 
     return (
         <FoodCardWrapper>
-            <img src={food.photo} alt={food.name}/>
+            <FoodPhoto src={food.photo} alt={food.name}/>
 
             <FoodDescription>
                 <FoodName>{food.name}</FoodName>
                 <span> | </span>
-                <FoodCalories>{food.calories}</FoodCalories>
+                <FoodCalories>{food.calories} cal</FoodCalories>
             </FoodDescription>
 
             <FoodTags>{tags}</FoodTags>

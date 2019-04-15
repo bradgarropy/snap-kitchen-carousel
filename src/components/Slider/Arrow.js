@@ -6,6 +6,7 @@ import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons"
 
 const StyledArrow = styled.div`
     cursor: pointer;
+    padding: 0 20px 0 20px;
 `
 
 const Arrow = ({direction, ...props}) => {
