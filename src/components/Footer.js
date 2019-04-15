@@ -6,7 +6,11 @@ const StyledFooter = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: ${({theme}) => theme.colors.lightPurple};
+    background-image: linear-gradient(
+        to right bottom,
+        ${({theme}) => theme.colors.pink},
+        ${({theme}) => theme.colors.hotPink}
+    );
     color: ${({theme}) => theme.colors.black};
     padding: 1.5rem;
 

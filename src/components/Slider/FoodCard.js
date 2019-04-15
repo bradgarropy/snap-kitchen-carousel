@@ -1,11 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
-import {displayPrice} from "../utils/price"
+import {displayPrice} from "../../utils/price"
 
 const FoodCardWrapper = styled.div`
     border: 3px solid black;
     color: ${({theme}) => theme.colors.charcoal};
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    border: 3px solid hotpink;
+`
+
+const FoodDescription = styled.p`
+    margin-top: -25px;
 `
 
 const FoodName = styled.span`
@@ -22,8 +30,13 @@ const FoodTags = styled.p`
 `
 
 const FoodPrice = styled.p`
+    display: grid;
+    align-content: center;
     border-radius: 5px;
     padding: 7px;
+    width: 92px;
+    height: 24px;
+    text-align: center;
     border: 2px solid ${({theme}) => theme.colors.charcoal};
 `
 
@@ -34,11 +47,11 @@ const FoodCard = ({food}) => {
         <FoodCardWrapper>
             <img src={food.photo} alt={food.name}/>
 
-            <p>
+            <FoodDescription>
                 <FoodName>{food.name}</FoodName>
                 <span> | </span>
                 <FoodCalories>{food.calories}</FoodCalories>
-            </p>
+            </FoodDescription>
 
             <FoodTags>{tags}</FoodTags>
             <FoodPrice>{displayPrice(food.price)}</FoodPrice>

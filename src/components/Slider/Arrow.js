@@ -1,7 +1,12 @@
 import React from "react"
+import styled from "styled-components"
+import PropTypes from "prop-types"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons"
-import PropTypes from "prop-types"
+
+const StyledArrow = styled.div`
+    cursor: pointer;
+`
 
 const Arrow = ({direction, ...props}) => {
     let icon
@@ -15,7 +20,11 @@ const Arrow = ({direction, ...props}) => {
             break
     }
 
-    return <FontAwesomeIcon icon={icon} size="3x" {...props}/>
+    return (
+        <StyledArrow>
+            <FontAwesomeIcon icon={icon} size="3x" {...props}/>
+        </StyledArrow>
+    )
 }
 
 Arrow.propTypes = {

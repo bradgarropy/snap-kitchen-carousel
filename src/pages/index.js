@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import Slider from "../components/Slider"
+import Slider from "../components/Slider/Slider"
 
 const Index = () => {
     return (

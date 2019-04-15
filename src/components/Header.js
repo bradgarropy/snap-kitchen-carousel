@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components"
-import Navigation from "./Navigation"
 
 const StyledHeader = styled.div`
     display: flex;
     justify-content: space-between;
-    background-color: ${({theme}) => theme.colors.darkPurple};
+    background-image: linear-gradient(
+        to right bottom,
+        ${({theme}) => theme.colors.pink},
+        ${({theme}) => theme.colors.hotPink}
+    );
     color: ${({theme}) => theme.colors.white};
     padding: 1.5rem;
 
@@ -18,7 +21,6 @@ const Header = () => {
     return (
         <StyledHeader>
             <p>HEADER</p>
-            <Navigation/>
         </StyledHeader>
     )
 }
