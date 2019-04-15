@@ -1,7 +1,7 @@
 {
     "name": "snap-kitchen-slider",
     "version": "0.0.1",
-    "description": "🎠 snap kitchen interview question - slider",
+    "description": "⏩ snap kitchen interview question - slider",
     "keywords": [
         "gatsby",
         "react",
@@ -9,7 +9,6 @@
         "eslint",
         "snap-kitchen",
         "interview",
-        "carousel",
         "slider"
     ],
     "homepage": "https://github.com/bradgarropy/snap-kitchen-slider",
