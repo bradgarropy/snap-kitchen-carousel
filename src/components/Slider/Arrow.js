@@ -5,11 +5,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faAngleLeft, faAngleRight} from "@fortawesome/free-solid-svg-icons"
 
 const StyledArrow = styled.div`
-    cursor: pointer;
+    cursor: ${({disabled}) => (disabled ? "arrow" : "pointer")};
+    color: ${({disabled, theme}) =>
+        disabled ? theme.colors.grey : theme.colors.charcoal};
     padding: 0 20px 0 20px;
 `
 
-const Arrow = ({direction, ...props}) => {
+const Arrow = ({direction, disabled = false, ...props}) => {
     let icon
 
     switch (direction) {
@@ -22,14 +24,15 @@ const Arrow = ({direction, ...props}) => {
     }
 
     return (
-        <StyledArrow>
+        <StyledArrow disabled={disabled}>
             <FontAwesomeIcon icon={icon} size="3x" {...props}/>
         </StyledArrow>
     )
 }
 
 Arrow.propTypes = {
-    direction: PropTypes.oneOf(["left", "right"]),
+    direction: PropTypes.oneOf(["left", "right"]).isRequired,
+    disabled: PropTypes.bool,
 }
 
 export default Arrow

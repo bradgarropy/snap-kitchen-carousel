@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import styled from "styled-components"
 import Arrow from "./Arrow"
 import FoodCard from "./FoodCard"
@@ -35,23 +35,38 @@ const Slide = styled.div`
 `
 
 const Slider = () => {
+    const [index, setIndex] = useState(0)
     const [translate, setTranslate] = useState(0)
 
-    const onLeftClick = () => {
-        setTranslate(translate + 500)
+    useEffect(() => {
+        setTranslate(index * -500)
+    }, [index])
+
+    const previous = () => {
+        const newIndex = index === 0 ? 0 : index - 1
+        setIndex(newIndex)
         return
     }
 
-    const onRightClick = () => {
-        setTranslate(translate - 500)
+    const next = () => {
+        const newIndex = index === foods.length - 1 ? index : index + 1
+        setIndex(newIndex)
         return
     }
 
     return (
         <SliderWrapper>
             <Arrows>
-                <Arrow direction="left" onClick={onLeftClick}/>
-                <Arrow direction="right" onClick={onRightClick}/>
+                <Arrow
+                    direction="left"
+                    onClick={previous}
+                    disabled={index === 0}
+                />
+                <Arrow
+                    direction="right"
+                    onClick={next}
+                    disabled={index === foods.length - 1}
+                />
             </Arrows>
 
             <Slides translate={translate}>
