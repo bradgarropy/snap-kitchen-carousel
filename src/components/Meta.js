@@ -1,21 +1,27 @@
 import React from "react"
 import Helmet from "react-helmet"
-import favicon from "../../static/images/gatsby-icon.png"
+import favicon from "../../static/images/favicon.ico"
 
 const Meta = () => {
     return (
         <Helmet>
             <html lang="en"/>
 
-            <title>gatsby starter</title>
+            <title>Snap Kitchen Slider</title>
 
-            <meta name="description" content="⏩ snap kitchen interview question - slider"/>
-            <meta name="keywords" content="gatsby, react, scss, eslint"/>
+            <meta
+                name="description"
+                content="⏩ snap kitchen interview question - slider"
+            />
+            <meta
+                name="keywords"
+                content="gatsby, react, styled-components, eslint, snap-kitchen, interview, slider"
+            />
 
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:site" content="@bradgarropy"/>
             <meta name="twitter:creator" content="@bradgarropy"/>
-            <meta name="twitter:title" content="gatsby starter"/>
+            <meta name="twitter:title" content="Snap Kitchen Slider"/>
             <meta
                 name="twitter:description"
                 content="⏩ snap kitchen interview question - slider"
@@ -27,10 +33,10 @@ const Meta = () => {
 
             <meta
                 property="og:url"
-                content="https://the-great-gatsby-starter.netlify.com/"
+                content="https://snap-kitchen-slider.netlify.com/"
             />
             <meta property="og:type" content="website"/>
-            <meta property="og:title" content="gatsby starter"/>
+            <meta property="og:title" content="Snap Kitchen Slider"/>
             <meta
                 property="og:description"
                 content="⏩ snap kitchen interview question - slider"

@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://snap-kitchen-slider.netlify.com">
-        <img alt="⏩ snap kitchen interview question - slider" src="/static/images/gatsby-icon.png" width="150">
+        <img alt="⏩ snap kitchen interview question - slider" src="/static/images/snap-kitchen.png" width="150">
     </a>
 </p>
 
