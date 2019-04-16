@@ -12,7 +12,7 @@
 
 # ⏩ Snap Kitchen Slider
 
-*During an interview with [Snap Kitchen][1], I was asked to code a slider from their marketing site. So I fired up [CodeSandbox][2] and got to work. This exercise was particularly challenging because I had never created a slider before, but especially enjoyable beacuse I was working in an environment I was comfortable with.*
+_During an interview with [Snap Kitchen][1], I was asked to code a slider from their marketing site. So I fired up [CodeSandbox][2] and got to work. This exercise was particularly challenging because I had never created a slider before, but especially enjoyable beacuse I was working in an environment I was comfortable with._
 
 ## ❓ Question
 
@@ -36,7 +36,6 @@ npm start
 ```
 
 Or you can check out the [live demo][3] on [Netlify][4].
-
 
 [1]: https://snapkitchen.com
 [2]: https://codesandbox.io
