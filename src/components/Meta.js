@@ -33,7 +33,7 @@ const Meta = () => {
 
             <meta
                 property="og:url"
-                content="https://snap-kitchen-slider.netlify.com/"
+                content="https://snap-kitchen-slider.netlify.com"
             />
             <meta property="og:type" content="website"/>
             <meta property="og:title" content="Snap Kitchen Slider"/>

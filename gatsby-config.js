@@ -10,8 +10,8 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
-                name: "gatsby starter",
-                short_name: "gatsby starter",
+                name: "snap kitchen slider",
+                short_name: "snap kitchen slider",
                 start_url: "/",
                 background_color: "#ffffff",
                 theme_color: "#ffffff",
